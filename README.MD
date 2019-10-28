@@ -87,6 +87,87 @@ nombreFuncion(parametro_1, parametro_2);
 
 Uno de los conceptos más importantes de la programación son las variables. Una variable **no es más que una herramienta de programación que nos ayuda a almacenar y recuperar información en nuestros programas.**
 
+### 2.1 Tipos de datos ###
+
+* **Entero (int)**
+
+
+Es el tipo de dato más común. En C++ se utiliza la palabra reservada int para declarar un tipo de dato entero.
+
+```csharp
+// Declaración de una variable entero
+int variableEntera = 32;
+```
+
+Puede almacenar un número de 16-bit es decir, 2 bytes (16 unos en binario 1111111111111111). En total son 65.535 números pero como almacena números positivos y negativos el rango de un int es de -32.768 a 32.767.
+
+* **Entero largo (long)**
+
+Puede almacenar números de 4 bytes (32-bit). El rango de valores es de -2.147.483.648 a 2.147.483.647. Puede almacenar números positivos y negativos. Sin embargo puedes utilizar la palabra reservada unsigned long para almacenar solo números positivos.
+
+```csharp
+// Declaración de una variable entero largo
+long milisegundos = 90000;
+```
+
+* **Decimal (float)**
+
+Si quieres almacenar un número decimal con los tipos de datos que hemos visto hasta ahora no podrías. Para los números con decimales tenemos los números de coma flotante. En C++ se utiliza la palabra reservada float.
+
+```csharp
+// Declaración de una variable de coma flotante
+float variableDecimal = 3.141516;
+```
+
+Con este tipo de datos podemos almacenar valores realmente grandes. El rango es de 3.4028235 x 1038 hasta -3.4028235 x 1038. Eso sí, solo utiliza 4 bytes de memoria (32-bit).
+
+* **Byte (byte)**
+
+Es el tipo de dato más pequeño que hemos visto hasta ahora. En C++ se utiliza la palabra reservada byte y como indica su nombre, solo ocupa 1 byte de memoria.
+
+```csharp
+// Declaración de una variable byte
+byte miByte = 88;
+byte miOtroByte = B1011000;
+```
+
+El rango de valores que puede almacenar es de 0 a 255 sin signo. Se puede asignar valores de diferentes maneras. La más típica es un valor en el sistema decimal pero podemos también asignar un valor en binario.
+
+* **Booleano (boolean)**
+
+Es el tipo de dato que menos memoria ocupa, 1-bit. La palabra reservada en C++ es boolean y puede tomar dos valores o 1 o 0.
+
+```csharp
+// Declaración variables booleanos
+boolean boolConFalse = false;
+boolean boolConCero = 0;
+boolean boolConLow = LOW;
+ 
+boolean boolConTrue = true;
+boolean boolConNumero1 = 1;
+boolean boolConNumero2 = 23;
+boolean boolConNumero3 = -41;
+boolean boolConHigh = HIGH;
+```
+
+He puesto varios ejemplos para explicar una cosa. Lo primero, 1 equivale a true (verdadero) y 0 equivale a false (falso).
+
+Con una variable del tipo booleano lo que sucede es que siempre que sea 0 será falso y en caso contrario será siempre verdadero.
+
+
+* **Carácter (char)**
+
+El último tipo de dato que vamos a ver en este curso de Arduino es el carácter. Se representa con la palabra reservada char en C++ y utiliza 1 byte de memoria (8-bit).Nos permite almacenar una letra de una forma especial.
+
+```csharp
+// Declaración variables char
+char miChar = 'p';
+char miCharNumero = 112;
+```
+
+Realmente estamos almacenando una letra como si fuera un número utilizando el sistema ASCII. Gracias a una tabla donde viene la correspondencia entre letra y número podemos saber de qué carácter se trata.
+
+
 
 
 ### Autor ###
