@@ -168,6 +168,148 @@ char miCharNumero = 112;
 Realmente estamos almacenando una letra como si fuera un número utilizando el sistema ASCII. Gracias a una tabla donde viene la correspondencia entre letra y número podemos saber de qué carácter se trata.
 
 
+### 3.1 Operadores matemáticos ###
+Se aplican al manejo de variables, condicionales y bucles
+
+```csharp
+//= (Asignar)
+int numero1 = 3;
+
+// % (Módulo) -> Resto de la división
+int numero1 = 8;
+int modulo = numero1 % 2; //Da como resultado 0 (Resto de 8 / 2)
+
+// + (Suma)
+int numero1 = 5;
+int numero2 = 7;
+int suma = numero1 + numero2;   //Resultado:12
+
+// - (Resta)
+int numero1 = 7;
+int numero2 = 5;
+int resta = numero1 - numero2;  //Resultado: 2
+
+// * (Multiplicación)
+int numero1 = 7;
+int numero2 = 5;
+int multiplicacion = numero1 * numero2; //Resultado:35
+
+// / (División)
+int numero1 = 10;
+int numero2 = 5;
+int division = numero1 / numero2;   //Resultado: 2
+
+```
+### 3.2 Operadores de comparación ###
+Usados generalmente dentro de las condicionales y sobre los bucles for y while
+
+```csharp
+// == (igual a)
+numero1 == numero2; 
+
+// != (diferente de)
+numero1 != numero2;
+
+// < (menos que)
+numero1 < numero2;
+
+// <= (menor o igual que)
+numero1 <= numero2;
+
+// > (mayor que)
+numero1 > numero2;
+
+// >= (mayor o igual que)
+numero1 >= numero2;
+```
+### 3.3 Operadores booleanos ###
+Usados generalmente dentro de las condicionales if
+```csharp
+// && (y)
+if(numero1 && numero2 == 5) //Tienes que ser verdad las dos condiciones para ejecutarse
+
+// || (o)
+if(numero1 || numero2 == 5)// Se ejecuta cuando es verdad al menos una de las dos condiciones
+
+//! (Negación)
+
+```
+
+## 4. Condicionales ##
+Controlan el flujo de nuestro programa con condiciones.
+### 4.1 If...else ### 
+```csharp
+int edad = 27;
+if(edad >= 18)
+{
+    Serial.println("Eres mayor de edad");
+}
+else
+{
+    Serial.println("Eres menor de edad");
+}
+
+// Uso de else if
+if(edad <= 2)
+{
+    Serial.prinln("Eres un bebé");
+}
+else if(edad > 2 && edad < 18)
+{
+    Serial.println("Eres adolescente");
+}
+else    // Tienes 18 o más años
+{
+    Serial.println("Eres mayor de edad");
+}
+```
+### 4.2 Switch ###
+```csharp
+switch (var)
+{
+  case 1:
+    //hace algo cuando var es igual a 1
+  break
+
+  case 2:
+    //hace algo cuando var es igual a 2
+  break
+
+  default:
+    //si nada coincide, hace lo predeterminado
+    // default es optional
+  break
+}
+```
+
+## 5. Bucles ##
+Para repetir lo que se encuentra en ellos
+### 5.2 For (Por) ###
+```csharp
+for(int i = 0; i >= 10; i++)
+{
+    Serial.println(i);  // Imprime los números del 0 al 10
+}
+```
+### 5.3 While (Mientras) ###
+```csharp
+int numero = 0;
+while(numero <= 10)
+{
+    Serial.println(numero);
+    numero++;
+}
+```
+
+### Prácticas iniciales ###
+
+* Construye un circuito y prográmalo que simule el funcionamiento de un semáforo.
+  
+* Construye las luces del coche fantástico
+
+
+
+
 
 
 ### Autor ###
