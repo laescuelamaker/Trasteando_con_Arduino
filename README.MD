@@ -167,6 +167,7 @@ char miCharNumero = 112;
 
 Realmente estamos almacenando una letra como si fuera un número utilizando el sistema ASCII. Gracias a una tabla donde viene la correspondencia entre letra y número podemos saber de qué carácter se trata.
 
+## 3. Operadores matemáticos, booleanos y de comparación ##
 
 ### 3.1 Operadores matemáticos ###
 Se aplican al manejo de variables, condicionales y bucles
@@ -304,8 +305,82 @@ while(numero <= 10)
 ### Prácticas iniciales ###
 
 * Construye un circuito y prográmalo que simule el funcionamiento de un semáforo.
+
+```csharp
+int rojo = 8;
+int amarillo = 9;
+int verde = 10;
+int t_rojo = 1000;
+int t_amarillo = 300;
+int t_verde = 1000;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(rojo, OUTPUT);
+  pinMode(amarillo, OUTPUT);
+  pinMode(verde, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(rojo, 1);  // Escribe en el pin digital encendido
+  delay(t_rojo);          // Espera 1 segundo (1000ms)
+
+  digitalWrite(rojo, 0);
+  
+for(int i = 1; i<= 5; i++)
+{
+   digitalWrite(amarillo, 1);   
+   delay(t_amarillo);
+   digitalWrite(amarillo, 0);
+   delay(t_amarillo);
+}
+
+digitalWrite(verde, 1);
+delay(t_verde);
+digitalWrite(verde, 0);
+
+
+}
+```
   
 * Construye las luces del coche fantástico
+
+```csharp
+int rojo = 8;
+int rojo_2 = 9;
+int rojo_3 = 10;
+int t_rojo = 1000;
+
+void setup() 
+{
+  pinMode(rojo, OUTPUT);
+  pinMode(rojo_2, OUTPUT);
+  pinMode(rojo_3, OUTPUT);
+  Serial.begin(9600);
+}
+
+
+void loop() 
+{
+  //IDA
+  digitalWrite(rojo, 1);
+  delay(300);
+  digitalWrite(rojo, 0);
+  digitalWrite(rojo_2, 1);
+  delay(300);
+  digitalWrite(rojo_2, 0);
+  digitalWrite(rojo_3, 1);
+  delay(300);
+  //VUELTA
+  digitalWrite(rojo_3, 0);
+  digitalWrite(rojo_2, 1);
+  delay(300);
+  digitalWrite(rojo_2, 0);
+  
+
+  
+}
+```
 
 
 
